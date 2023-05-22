@@ -1,0 +1,32 @@
+@url = http://localhost:7070/api/users
+@adminToken = 8dfa7baa956bfb321386a20f259f2889
+
+
+###
+
+
+GET {{url}}/all
+Authorization: {{adminToken}}
+
+
+###
+
+POST {{url}}/register
+Content-Type: application/json
+
+{
+    "username": "Umrbek",
+    "password": "123",
+    "name": "Umrbek",
+    "surname": "Masharipov"
+}
+
+###
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "username": "Umrbek",
+    "password": "123"
+}

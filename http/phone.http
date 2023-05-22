@@ -1,0 +1,44 @@
+@url =  http://localhost:7070/api/phones
+@adminToken = 8dfa7baa956bfb321386a20f259f2889
+
+###
+
+GET {{url}}
+Authorization: {{adminToken}}
+
+###
+
+
+POST {{url}}
+# Authorization: {{adminToken}}flex-wrap
+Content-Type: application/json
+
+{
+    "model": "Samsung galaxy A70",
+    "shortDescription": "xotira: 128/4, Kamera: 64mp, batariya: 5000M/A",
+    "description": "Samsung kompaniyasi tamonidan ishlab chiqarilgan qora rangli  Samsung galaxy A70 telefoni ",
+    "price": 5.500
+}
+
+###
+
+
+DELETE {{url}}/48
+Authorization: {{adminToken}}
+
+
+###
+
+
+PUT {{url}}/34
+Authorization: {{adminToken}}
+Content-Type: application/json
+
+{
+    "model": "Samsung galaxy A70",
+    "shortDescription": "xotira: 128/4, Kamera: 64mp, batariya: 5000M/A",
+    "img" : "fdfdffd.png",
+    "description": "Samsung kompaniyasi tamonidan ishlab chiqarilgan qora rangli  Samsung galaxy A70 telefoni ",
+    "price": 500
+}
+

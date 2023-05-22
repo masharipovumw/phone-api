@@ -1,0 +1,33 @@
+@url = http://localhost:7070/api/product
+@adminToken = 8dfa7baa956bfb321386a20f259f2889
+@usertoken = eb09020bdb7bdb397972169144a7656a
+
+
+###
+
+POST {{url}}
+Content-Type: application/json
+Authorization: {{usertoken}}
+
+{
+    "phonId": 41,
+    "count": 1
+}
+
+
+###
+GET {{url}}/card
+Authorization: {{usertoken}}
+
+
+###
+
+
+DELETE {{url}}/51
+Authorization: {{usertoken}}
+
+
+###
+
+GET {{url}}/all
+Authorization: {{adminToken}}
